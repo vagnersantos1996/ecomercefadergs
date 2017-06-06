@@ -1,0 +1,117 @@
+/* CSS Document */
+
+* {
+	box-sizing:border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	background-color:rgba(228,98,49,1.00);
+}
+
+ul {
+	list-style:none;
+}
+
+a:visited,
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+header {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#FFF;
+	box-shadow:0 2px 5px 0px rgba(0, 0, 0, 0.7);
+	padding:15px 20px;
+}
+
+header > div {
+	float:left;
+	height:100%;
+}
+
+header > nav {
+	display:table;
+	margin:0 auto;
+	height:100%;
+	width:80%;
+}
+
+header > nav > ul {
+	margin:0;
+	padding:0;
+}
+
+header > nav > ul > li {
+	float:left;
+	padding:5px 0;
+	margin:0 25px;
+	border-bottom:1px solid #FFF;
+}
+
+header > nav > ul > li > a {
+	color:rgba(35,34,34,1.00);
+	transition:0.3s;
+	position:relative;
+}
+
+header > nav > ul > li > a::after {
+	content:'';
+	background-color:rgba(228,98,49,1.00);
+	height:5px;
+	width:0;
+	position:absolute;
+	bottom:-10px;
+	left:0;
+	transition:0.3s ease;
+	border-radius:3px;
+}
+
+header > nav > ul > li > a:hover {
+	color:rgba(228,98,49,1.00);
+}
+
+header > nav > ul > li > a:hover::after {
+	width:100%;
+}
+
+header > nav > a > div {
+	float:right;
+	height:48px;
+	width:48px;
+	border-radius:50%;
+	background-image:url(../img/carrinho_menu.png);
+	background-size:60%;
+	background-position:center;
+	background-repeat:no-repeat;
+	transition:0.3s;
+	position:relative;
+}
+
+header > nav > a > div:hover {
+	background-color:#DFDFDF
+}
+
+header > nav > a > div > div {
+	position:absolute;
+	border-radius:50%;
+	padding:2px;
+	width:20px;
+	height:20px;
+	left:0px;
+	top:65%;
+	font-size:12px;
+	background-color:#E46231;
+	text-align:center;
+	color:#FFF;
+}
+
+section {
+	margin-top:80px;
+}
